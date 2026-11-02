@@ -49,6 +49,7 @@
     <ul>
       <li><strong>Account details:</strong> an email address and password, so you can sign in. The password is stored only in scrambled (hashed) form.</li>
       <li><strong>Food log, body measurements and weight:</strong> to track nutrition and progress over time.</li>
+      <li><strong>Targets and plans:</strong> your nutrition targets, goal weight, saved foods and dinner rotation, to plan meals and measure progress.</li>
       <li><strong>Whoop data</strong> (recovery, heart rate variability, resting heart rate, sleep, strain, energy burned, workouts and body measurements): to show recovery and training alongside nutrition.</li>
       <li><strong>Apple Health data:</strong> to bring in health readings you choose to share.</li>
       <li><strong>Meal photos:</strong> to estimate what is on the plate and its nutrition.</li>
@@ -58,7 +59,7 @@
     <h2>Where it is stored</h2>
     <p>Data the app saves is stored with Supabase in Frankfurt, Germany. Each account can see only its own data, and the database itself enforces this.</p>
     <p>Supabase also keeps standard technical records, such as sign-in times and IP addresses, for security.</p>
-    <p>Meal photos and chat messages are not saved on the app’s servers. They are sent to Anthropic to produce a reply, and the app shows the reply on screen. Whoop data is not saved either: it is fetched from Whoop each time you view it. The app saves only the sign-in tokens Whoop issues, so you stay connected, and those tokens stay on the server, never on your phone.</p>
+    <p>Meal photos and chat messages are not saved on the app’s servers. They are sent to Anthropic to produce a reply, and the app shows the reply on screen. Most Whoop data is not saved either: it is fetched from Whoop each time you view it. The exception is each day’s energy burned, which is saved with that day’s log to track your energy balance. The app saves only the sign-in tokens Whoop issues, so you stay connected, and those tokens stay on the server, never on your phone.</p>
 
     <h2>Who processes it</h2>
     <ul>
