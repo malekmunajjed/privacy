@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health Tracker Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2422;
+      --muted: #5f6662;
+      --line: #e3e5e3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171817;
+        --text: #eef0ee;
+        --muted: #a3a8a4;
+        --line: #343836;
+      }
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 32px 16px 64px;
+    }
+    h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 4px; }
+    h2 { font-size: 1.15rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+    .meta { color: var(--muted); margin: 0 0 24px; }
+    ul { padding-left: 20px; }
+    li { margin: 6px 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Health Tracker Privacy Policy</h1>
+    <p class="meta">Published by monkeytonik · Effective 2 November 2026</p>
+
+    <h2>About the app</h2>
+    <p>Health Tracker is a personal health and nutrition app. It is in private testing and is used only by its developer. It is not available to the public, and some of the features described here are still being built.</p>
+
+    <h2>What the app handles, and why</h2>
+    <ul>
+      <li><strong>Account details:</strong> an email address and password, so you can sign in. The password is stored only in scrambled (hashed) form.</li>
+      <li><strong>Food log, body measurements and weight:</strong> to track nutrition and progress over time.</li>
+      <li><strong>Whoop data</strong> (recovery, heart rate variability, resting heart rate, sleep, strain, workouts and body measurements): to show recovery and training alongside nutrition.</li>
+      <li><strong>Apple Health data:</strong> to bring in health readings you choose to share.</li>
+      <li><strong>Meal photos:</strong> to estimate what is on the plate and its nutrition.</li>
+      <li><strong>Chat messages:</strong> to answer your questions.</li>
+    </ul>
+
+    <h2>Where it is stored</h2>
+    <p>Data the app saves is stored with Supabase in Frankfurt, Germany. Each account can see only its own data, and the database itself enforces this.</p>
+    <p>Meal photos and chat messages are not saved on the app’s servers. They are sent to Anthropic to produce a reply, and the app shows the reply on screen. Whoop data is not saved either: it is fetched from Whoop each time you view it. The app saves only the sign-in tokens Whoop issues, so you stay connected, and those tokens stay on the server, never on your phone.</p>
+
+    <h2>Who processes it</h2>
+    <ul>
+      <li><strong>Supabase</strong> hosts the app’s database, sign-in and server functions.</li>
+      <li><strong>Anthropic</strong> receives meal photos and chat messages to generate replies with its Claude AI models.</li>
+      <li><strong>Whoop</strong> and <strong>Apple</strong> are sources of data, and only when you connect them.</li>
+    </ul>
+
+    <h2>Read-only access to Whoop and Apple Health</h2>
+    <p>The app asks Whoop and Apple Health only for permission to read data. It cannot change or delete anything in your Whoop or Apple Health account.</p>
+
+    <h2>What the app does not do</h2>
+    <p>Your data is not sold, not used for advertising, and not shown to other users. The app contains no advertising or tracking tools.</p>
+
+    <h2>Deleting your data</h2>
+    <p>This is what is possible today:</p>
+    <ul>
+      <li><strong>Whoop:</strong> the app’s Disconnect Whoop button deletes the stored Whoop sign-in tokens and asks Whoop to cancel the app’s access. Whoop data itself is never stored, so nothing else remains.</li>
+      <li><strong>Your account:</strong> while the app is in private testing, accounts are deleted by the developer. Deleting an account also deletes everything linked to it in the app’s database.</li>
+      <li><strong>Meal photos and chat messages:</strong> the app does not store them, so there is nothing for it to delete. Anthropic handles them under its own privacy policy.</li>
+    </ul>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+  </main>
+</body>
+</html>
